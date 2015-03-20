@@ -184,6 +184,19 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.servicesbg {
+    display: table;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background: url(../img/1.jpg) no-repeat left center scroll;
+
+}
+
+#services{
+	color: #0066FF;
+}
+
 /* Callout */
 
 .callout {
@@ -214,6 +227,11 @@ hr.small {
 
 .img-portfolio:hover {
     opacity: 0.8;
+}
+
+.portfolio-item img{
+	width: 500px;
+	height: 333px;
 }
 
 /* Call to Action */
