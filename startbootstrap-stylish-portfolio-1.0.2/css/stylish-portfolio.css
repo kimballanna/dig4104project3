@@ -51,8 +51,8 @@ body {
 
 .btn-light {
     border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+    color: #fff;
+    background-color: #0066ff;
 }
 
 .btn-light:hover,
@@ -189,7 +189,7 @@ hr.small {
     width: 100%;
     height: auto;
     color: #fff;
-    background: url(../img/1.jpg) no-repeat left center scroll;
+    background: url(../img/1.jpg) no-repeat left top scroll;
 
 }
 
