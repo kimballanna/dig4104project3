@@ -341,3 +341,56 @@ footer {
 	opacity: .8;
 	font-size: 14px;
 }
+
+/* Food Gallery */
+
+#thumbs { padding-top: 10px; overflow: hidden; }
+#thumbs img, #largeImage {
+ border: 1px solid gray;
+ padding: 4px;
+ background-color: white;
+ cursor: pointer;
+}
+#thumbs img {
+ float: left;
+ margin-right: 6px;
+}
+#description {
+ background: black;
+ color: white;
+ position: absolute;
+ bottom: 0;
+ padding: 10px 20px;
+ width: 600px;
+ margin: 5px;
+ opacity: .7;
+}
+#panel { 
+	position: relative;
+	display: inline-block;
+ }
+ 
+ #gallery {
+ float: left;
+ text-align: left;
+ margin-top: 20px;
+ margin-left: 20px;
+ display: inline-block;
+ }
+ 
+#foodgallery {
+display: block;
+clear: both;
+text-align: center;
+margin-left: 7%;
+margin-top: 2%;
+}
+ 
+#panel2 { 
+	position: relative; 
+	float: left;
+	display: inline;
+	clear: right;
+	text-align: right;
+	width: 700px;;
+	}
