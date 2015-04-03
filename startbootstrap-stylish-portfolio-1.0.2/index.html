@@ -44,6 +44,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--CSS FOR API-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/api/helpers.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/api/gallery.css" />
+    <link rel="stylesheet" href="css/api/thumbnails.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
 
     <!--GAME TUTORIAL -->
     <style>
@@ -439,6 +446,32 @@ $('#beer').click(function() {
         });
     </script>
 
+    <!-- FLICKR API-->
+    <section class="island">
+         <h1>Flickr gallery</h1>
+         <form class="js-form-search form-search" action="/search" method="get" role="search">
+            <label for="query">Search:</label>
+            <input type="search" name="query" id="query" placeholder="Search" required />
+            <input type="submit" value="Search" />
+         </form>
+    </section>
+
+      <div class="island">
+         <div class="js-gallery gallery">
+            <img src="" class="js-gallery__image" />
+            <button class="js-gallery__arrow--left gallery__arrow gallery__arrow--left">
+               <span class="visually-hidden">Previous photo</span>
+            </button>
+            <button class="js-gallery__arrow--right gallery__arrow gallery__arrow--right">
+               <span class="visually-hidden">Next photo</span>
+            </button>
+         </div>
+      </div>
+
+      <div class="island thumbnails">
+         <ul class="js-thumbnails__list thumbnails__list"></ul>
+         <ol class="js-thumbnails__pager thumbnails__pager"></ol>
+      </div>
 	
 	
 	 <!-- Tourist Callout -->
@@ -581,7 +614,7 @@ $('#beer').click(function() {
 		</small>
         </iframe>
 		-->
-		<div id="map-canvas"></div
+		<div id="map-canvas"></div>
     </section>
 
     <!-- Footer -->
@@ -655,6 +688,11 @@ $('#beer').click(function() {
         });
     });
     </script>
+<!--SCRIPT FOR THE API-->
+    <script src="js/api/utility.js"></script>
+    <script src="js/api/gallery.js"></script>
+    <script src="js/api/flickr.js"></script>
+    <script src="js/api/main.js"></script>
 
 </body>
 
