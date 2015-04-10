@@ -23,6 +23,9 @@
 	<script type="text/javascript" src="js/slider.js"></script>
 	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	
+	<!-- Slider -->
+		<script type="text/javascript" src="js/slider.js"></script>
+	
 	<!-- Google Maps API -->
 	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
@@ -289,28 +292,54 @@ $('#beer').click(function() {
 
 	<a  name="services"></a>
     <div class="content-section-a">
+	
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.ba-slider').each(function(){
+    var cur = $(this);
+    // Adjust the slider
+    var width = cur.width()+'px';
+    cur.find('.resize img').css('width', width);
+  });
+});
+</script>
+
+
+	<script>
+		function money(){
+			$('#money1').html('<h2 class="section-heading">American Money Handling</h2><p class="lead">In the United States, the credit card is king.Some establishments will try to disallow the use of credit cards for small purchases. Also, some smaller restaurants still operate as "cash only" -- be sure to ask before dining if you are out of cash. Be aware that many places will not accept hundred dollar bills and some, much fewer, will not accept fifty dollar bills.</p>');
+			$('#money2').html('<h2 class="section-heading">Japanese Money Handling</h2><p class="lead">Cash is still the preferred payment method. Big bills are readily used and accepted in Japan; you areunlikely to be frowned upon for using a 10,000 yen bill to pay even for low-cost items, although smaller denominations are appreciated for payments made in taxis, smaller shops, temples and shrines. The likelihood that credit cards are accepted decreases in small cities and towns, and thus it is advisable to keep cash at hand when visiting rural areas.</p>');
+			$('#image1').src='img/1.jpg';
+		}
+		function greetings(){
+			$('#money1').html('<h2 class="section-heading">American Greetings</h2><p class="lead">Generally Americans are apt to use the verbal, so Americans always say "Hi" or "How are you?" Even people who are strangers say "How is it going?"</p>');
+			$('#money2').html('<h2 class="section-heading">Japanese Greetings</h2><p class="lead">Japanese people tend to use nonverbal language. Many Japanese just make a bow with a smile indicating respect. Usually, young people have to make a deep bow for their superiors. In addition, not only gesture but also voice and countenance are very significant.</p>');
+			$('#image1').src='img/1.jpg';
+		}
+	</script>
+	
+	<div class="content-section-a">
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">American Greetings</h2>
-                    <p class="lead">Generally Americans are apt to use the 
-					verbal, so Americans always say "Hi" or "How are you?" 
-					Even people who are strangers say "How is it going?"</p>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-lg-offset-1">
+					<h2 id="h2culture">Cultural Differences</h2>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1 col-sm-6"><br /><br />
-                    <img class="img-responsive" src="img/bow.jpg" alt="">
-                </div>
-				<div class="col-lg-4 col-lg-offset-1">
+				<div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Japanese Greetings</h2>
-                    <p class="lead">Japanese people tend to use nonverbal 
-					language. Many Japanese just make a bow with a smile 
-					indicating respect. Usually, young people have to 
-					make a deep bow for their superiors. In addition, 
-					not only gesture but also voice and countenance are 
-					very significant.</p>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+                    <div class="clearfix"></div>
+				</div>
+				<div class="col-lg-12 col-sm-6">
+                    <div class="clearfix"></div>
+					                    <p class="pculture"><a onClick="greetings();" style="cursor: pointer; cursor: hand;">Greetings</a></p>
+                
+                    <p class="pculture"><a onClick="money();" style="cursor: pointer; cursor: hand;">Money Handling</a></p>
                 </div>
             </div>
 
@@ -320,39 +349,40 @@ $('#beer').click(function() {
     </div>
     <!-- /.content-section-a -->
 
-    <div class="content-section-a">
-
+	
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">American Money Handling</h3>
-                    <p class="lead">In the United States, the credit card is king.
-					 Some establishments will try to 
-					disallow the use of credit cards for small purchases. Also, 
-					some smaller restaurants still operate as "cash only" -- be 
-					sure to ask before dining if you are out of cash. Be aware 
-					that many places will not accept 
-					hundred dollar bills and some, much fewer, will not accept 
-					fifty dollar bills. </p>
+					<div id="money1">
+						<h2 class="section-heading">American Greetings</h2>
+						<p class="lead">Generally Americans are apt to use the 
+						verbal, so Americans always say "Hi" or "How are you?" 
+						Even people who are strangers say "How is it going?"</p>
+					</div>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1 col-sm-6"><br /><br />
-                    <img class="img-responsive" src="img/1000yen.jpg" alt=""><br />
-					<img class="img-responsive" src="img/cc.jpg" alt=""><br />
-					<img class="img-responsive" src="img/coin.jpg" alt="">
+                <div class="col-lg-2 col-sm-6"><br /><br />
+				
+<div class="ba-slider">
+   <img src="img/1000yen.jpg" id="image1">
+   <div class="resize">
+       <img src="img/10dollar.jpg" id="image2">
+   </div>
+   <span class="handle"></span>
+</div>	
+                    
                 </div>
-				<div class="col-lg-4 col-lg-offset-1">
+				<div class="col-lg-3 col-lg-offset-4">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Japanese Money Handling</h3>
-                    <p class="lead">Cash is still the preferred payment method. 
-					Big bills are readily used and accepted in Japan; you are
-					unlikely to be 
-					frowned upon for using a 10,000 yen bill to pay even for 
-					low-cost items, although smaller denominations are 
-					appreciated for payments made in taxis, smaller shops, 
-					temples and shrines. The likelihood that credit cards are 
-					accepted decreases in small cities and towns, and thus it 
-					is advisable to keep cash at hand when visiting rural areas.</p>
+					<div id="money2">
+						<h2 class="section-heading">Japanese Greetings</h2>
+						<p class="lead">Japanese people tend to use nonverbal 
+						language. Many Japanese just make a bow with a smile 
+						indicating respect. Usually, young people have to 
+						make a deep bow for their superiors. In addition, 
+						not only gesture but also voice and countenance are 
+						very significant.</p>
+					</div>
                 </div>
             </div>
 
@@ -361,6 +391,8 @@ $('#beer').click(function() {
 
     </div>
     <!-- /.content-section-a -->
+
+    
 	
 	
     <!-- Language Callout -->
