@@ -1,0 +1,84 @@
+ <!-- Language Callout -->
+    <aside class="lcallout" id="language">
+        <div class="text-vertical-center">
+        </div>
+    </aside>
+
+    <!-- Game -->
+    <section id="game">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Think your ready for Japan?</h2>
+
+                    <h3>Game - Test your language knowledge</h3>
+                        <div id="tutorial-memorygame" class="quizy-memorygame">
+                          <ul>
+                              <li class="match1">
+                                <img src="img/game/cards_bathroom.png">
+                              </li>
+                              <li class="match2">
+                                <img src="img/game/cards_dontunderstand.png">
+                              </li>
+                              <li class="match3">
+                                <img src="img/game/cards_excuseme.png">
+                              </li>
+                              <li class="match4">
+                                <img src="img/game/cards_no.png">
+                              </li>
+                              <li class="match5">
+                                <img src="img/game/cards_thankyou.png">
+                              </li>
+                              <li class="match6">
+                                <img src="img/game/cards_yes.png">
+                              </li>
+                              <li class="match1">
+                                <br><br><br><p class="text-style1">Bathroom</p>
+                              </li>
+                              <li class="match2">
+                                <br><br><br><p class="text-style1">I don't understand</p>
+                              </li>
+                              <li class="match3">
+                                <br><br><br><p class="text-style1">Excuse me</p>
+                              </li>
+                              <li class="match4">
+                                <br><br><br><p class="text-style1">No</p>
+                              </li>
+                              <li class="match5">
+                                <br><br><br><p class="text-style1">Thank you</p>
+                              </li>
+                              <li class="match6">
+                                <br><br><br><p class="text-style1">Yes</p>
+                              </li>
+                          </ul>
+                        </div>
+                        
+                        
+                        <div class="reset-button">
+                          <a id="restart" href="index.html#/language">Reset game</a>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--GAME scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/game/jquery-ui-1.8.17.custom.min.js"></script>
+      
+    <script src="js/game/jquery.flip.min.js"></script>
+    <script src="js/game/jquery.quizymemorygame.js"></script>
+      
+    <script>
+        var quizyParams = {itemWidth: 156, itemHeight: 156, itemsMargin:40, colCount:4, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true, randomised:true }; 
+        $('#tutorial-memorygame').quizyMemoryGame(quizyParams);
+        $('#restart').click(function(){
+          $('#tutorial-memorygame').quizyMemoryGame('restart');
+          return false;
+        });
+    </script>
+    
+    
