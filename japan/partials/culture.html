@@ -77,14 +77,22 @@ $(document).ready(function(){
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-6"><br /><br />
-                
-<div class="ba-slider">
-   <img src="img/1000yen.jpg" id="image1">
-   <div class="resize">
-       <img src="img/10dollar.jpg" id="image2">
-   </div>
-   <span class="handle"></span>
-</div>  
+                        
+        <div id="comparison" style="height: 275px; width: 550px">
+            <figure>
+                <div id="divisor"></div>
+            </figure>
+            <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+        </div>
+        <script>
+        window.onload = function() {
+        moveDivisor();
+        };
+
+        divisor = document.getElementById("divisor");
+        slider = document.getElementById("slider");
+        function moveDivisor() { divisor.style.width = slider.value+"%"; }
+        </script>
                     
                 </div>
                 <div class="col-lg-3 col-lg-offset-4">
