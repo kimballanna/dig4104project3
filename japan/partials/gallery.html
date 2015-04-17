@@ -155,7 +155,7 @@
    function showPhotos(data) {
       createPager(
          document.getElementsByClassName('js-thumbnails__pager')[0], {
-            query: lastSearch,
+            query: lastSearch+' japan',
             currentPage: data.photos.page,
             pagesNumber: data.photos.pages
          }
