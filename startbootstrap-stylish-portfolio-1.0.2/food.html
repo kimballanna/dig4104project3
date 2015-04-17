@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <title>日本へよこそう! - Welcome to Japan!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Lightbox -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	
+	<!-- Image Gallery -->
+	<script type="text/javascript" src="js/slider.js"></script>
+	<link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Slider -->
+		<script type="text/javascript" src="js/slider.js"></script>
+	
+	<!-- Google Maps API -->
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+	<script type="text/javascript" src="js/googlemap.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <!-- Game CSS -->
+    <link rel="stylesheet" href="css/quizymemorygame.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--CSS FOR API-->
+    <!--<link rel="stylesheet" href="css/api/normalize.css" />-->
+    <link rel="stylesheet" href="css/api/helpers.css" />
+    <!--<link rel="stylesheet" href="css/api/layout.css" />-->
+    <link rel="stylesheet" href="css/api/gallery.css" />
+    <link rel="stylesheet" href="css/api/thumbnails.css" />
+    <!--<link rel="stylesheet" href="css/api/homepage.css" />-->
+
+    <!--GAME TUTORIAL -->
+    <style>
+       
+    </style>
+
+</head>
+
+<body>
+
+
+<section>
+<!-- FLICKR API-->
+    <section class="island">
+         <h1>Flickr gallery</h1>
+         <form class="js-form-search form-search" action="/search" method="get" role="search">
+            <label for="query">Search:</label>
+            <input type="search" name="query" id="query" placeholder="Search" required />
+            <input type="submit" value="Search" />
+         </form>
+    </section>
+
+      <div class="island">
+         <div class="js-gallery gallery">
+            <img src="" class="js-gallery__image" />
+            <button class="js-gallery__arrow--left gallery__arrow gallery__arrow--left">
+               <span class="visually-hidden">Previous photo</span>
+            </button>
+            <button class="js-gallery__arrow--right gallery__arrow gallery__arrow--right">
+               <span class="visually-hidden">Next photo</span>
+            </button>
+         </div>
+      </div>
+
+      <div class="island thumbnails">
+         <ul class="js-thumbnails__list thumbnails__list"></ul>
+         <ol class="js-thumbnails__pager thumbnails__pager"></ol>
+      </div>
+    
+    
+</section>
+
+<!--SCRIPT FOR THE API-->
+    <script src="js/api/utility.js"></script>
+    <script src="js/api/gallery.js"></script>
+    <script src="js/api/flickr.js"></script>
+    <script src="js/api/main.js"></script>
+</body>
+</html>
