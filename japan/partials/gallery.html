@@ -9,16 +9,21 @@
     
     <!-- Page Content -->
     <div class="container">
+      <div class="row">
    <!-- FLICKR API-->
     <section class="island">
-         <h1>Flickr gallery</h1>
-         <form class="js-form-search form-search" action="/search" method="get" role="search">
-            <label for="query">Search:</label>
-            <input type="search" name="query" id="query" placeholder="Search" required />
-            <input type="submit" value="Search" />
+         <h1 style="float:left;">Flickr gallery</h1>
+         <br />
+         <form class="js-form-search form-search" action="/search" method="get" role="search" style="float: right;" class="form-control">
+            
+            <input type="search" class="form-control" name="query" id="query" placeholder="Search" required />
+            <input type="submit" value="Search" class="form-control" />
          </form>
     </section>
-
+ </div>
+    <br />
+    <br />
+    <br />
       <div class="island">
          <div class="js-gallery gallery">
             <img src="" class="js-gallery__image" />
