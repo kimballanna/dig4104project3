@@ -216,7 +216,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/travelheader.png) no-repeat center center scroll;
+    background: url(../img/travelheader2.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -235,24 +235,12 @@ hr.small {
     -o-background-size: cover;
 }
 
-.gallerycallout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/gallerycallout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 .lcallout {
     display: table;
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/languageheader.png) no-repeat center center scroll;
+    background: url(../img/languageheader2.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -264,7 +252,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/cultureheader.png) no-repeat center center scroll;
+    background: url(../img/cultureheader2.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
