@@ -22,15 +22,19 @@ $(document).ready(function(){
 
 
     <script>
+		
         function money(){
-            $('#money1').html('<h2 class="section-heading">American Money Handling</h2><p class="lead">In the United States, the credit card is king.Some establishments will try to disallow the use of credit cards for small purchases. Also, some smaller restaurants still operate as "cash only" -- be sure to ask before dining if you are out of cash. Be aware that many places will not accept hundred dollar bills and some, much fewer, will not accept fifty dollar bills.</p>');
-            $('#money2').html('<h2 class="section-heading">Japanese Money Handling</h2><p class="lead">Cash is still the preferred payment method. Big bills are readily used and accepted in Japan; you areunlikely to be frowned upon for using a 10,000 yen bill to pay even for low-cost items, although smaller denominations are appreciated for payments made in taxis, smaller shops, temples and shrines. The likelihood that credit cards are accepted decreases in small cities and towns, and thus it is advisable to keep cash at hand when visiting rural areas.</p>');
-            $('#image1').src='img/1.jpg';
+            $('#money1').html('<h2 class="section-heading">America</h2><p class="lead">In the United States, the credit card is king.Some establishments will try to disallow the use of credit cards for small purchases. Also, some smaller restaurants still operate as "cash only" -- be sure to ask before dining if you are out of cash. Be aware that many places will not accept hundred dollar bills and some, much fewer, will not accept fifty dollar bills.</p>');
+            $('#money2').html('<h2 class="section-heading">Japan</h2><p class="lead">Cash is still the preferred payment method. Big bills are readily used and accepted in Japan; you areunlikely to be frowned upon for using a 10,000 yen bill to pay even for low-cost items, although smaller denominations are appreciated for payments made in taxis, smaller shops, temples and shrines. The likelihood that credit cards are accepted decreases in small cities and towns, and thus it is advisable to keep cash at hand when visiting rural areas.</p>');
+            document.getElementById("slidermoney").style.visibility = "visible";
+			document.getElementById("slidergreeting").style.visibility = "hidden";
         }
         function greetings(){
-            $('#money1').html('<h2 class="section-heading">American Greetings</h2><p class="lead">Generally Americans are apt to use the verbal, so Americans always say "Hi" or "How are you?" Even people who are strangers say "How is it going?"</p>');
-            $('#money2').html('<h2 class="section-heading">Japanese Greetings</h2><p class="lead">Japanese people tend to use nonverbal language. Many Japanese just make a bow with a smile indicating respect. Usually, young people have to make a deep bow for their superiors. In addition, not only gesture but also voice and countenance are very significant.</p>');
-            $('#image1').src='img/1.jpg';
+            $('#money1').html('<h2 class="section-heading">America</h2><p class="lead">Generally Americans are apt to use the verbal, so Americans always say "Hi" or "How are you?" Even people who are strangers say "How is it going?" Often greetings are accompanied with a handshake or hug.</p>');
+            $('#money2').html('<h2 class="section-heading">Japan</h2><p class="lead">Japanese people tend to use nonverbal language. Many Japanese just make a bow with a smile indicating respect. Usually, young people have to make a deep bow for their superiors. In addition, not only gesture but also voice and countenance are very significant.</p>');
+            document.getElementById("slidermoney").style.visibility = "hidden";
+			document.getElementById("slidergreeting").style.visibility = "visible";
+			
         }
     </script>
     
@@ -42,7 +46,7 @@ $(document).ready(function(){
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-lg-offset-1">
-                    <h2 id="h2culture">Cultural Differences</h2>
+                    <h1 id="h2culture">文化　Culture</h1>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
@@ -50,12 +54,12 @@ $(document).ready(function(){
                 <div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
                 </div>
-                <div class="col-lg-12 col-sm-6">
+                <!--<div class="col-lg-12 col-sm-6">
                     <div class="clearfix"></div>
                                         <p class="pculture"><a onClick="greetings();" style="cursor: pointer; cursor: hand;">Greetings</a></p>
                 
                     <p class="pculture"><a onClick="money();" style="cursor: pointer; cursor: hand;">Money Handling</a></p>
-                </div>
+                </div>-->
             </div>
 
         </div>
@@ -64,41 +68,78 @@ $(document).ready(function(){
     </div>
     <!-- /.content-section-a -->
 
+	
+	<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Cultural Differences Between the USA and Japan</h2>
+                    <p class="lead">Japan is often considered more "Western" in culture than other Asian countries. Compared to the United States, there are certainly a lot of similarities. But Japan and the U.S. do have many cultural differences as well. Though no people can be generalized as a whole, and, like America, culture can very from region to region, here are some things that stick out to American expatriates living in Japan.</p>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+    <div class="content-section-a">
+
+        <div class="container" name="greeting">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Greetings</h2>
+                    <p class="lead">Generally <strong>Americans</strong> are apt to use the verbal, so Americans always say "Hi" or "How are you?" Even people who are strangers say "How is it going?" Often greetings are accompanied with a handshake or hug.<br />
+					<strong>Japanese</strong> people tend to use nonverbal language. Many Japanese just make a bow with a smile indicating respect. Usually, young people have to make a deep bow for their superiors. In addition, not only gesture but also voice and countenance are very significant.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                    <br /><br /><br /><img class="img-responsive" src="img/jpgreeting.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
     
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+				<div class="col-lg-12 col-sm-6">
+				<div class="col-lg-2 col-sm-6"><br /><br />
+					<div id="slidermoney">                   
+						<div id="comparison" style="height: 275px; width: 550px">
+							<figure>
+								<div id="divisor"></div>
+							</figure>
+							<input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+						</div>
+					</div>
+					
+					<script>
+					window.onload = function() {
+					moveDivisor();
+					};
+
+					divisor = document.getElementById("divisor");
+					slider = document.getElementById("slider");
+					function moveDivisor() { divisor.style.width = slider.value+"%"; }
+					</script>
+							
+				</div>
+                <div class="col-lg-3 col-sm-6 col-lg-offset-4" style="padding-right:50px;">
                     <div class="clearfix"></div>
                     <div id="money1">
-                        <h2 class="section-heading">American Greetings</h2>
+                        <h2 class="section-heading">American Money</h2>
                         <p class="lead">Generally Americans are apt to use the 
                         verbal, so Americans always say "Hi" or "How are you?" 
-                        Even people who are strangers say "How is it going?"</p>
+                        Even people who are strangers say "How is it going?" Often greetings are accompanied with a handshake or hug.</p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-6"><br /><br />
-                        
-        <div id="comparison" style="height: 275px; width: 550px">
-            <figure>
-                <div id="divisor"></div>
-            </figure>
-            <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-        </div>
-        <script>
-        window.onload = function() {
-        moveDivisor();
-        };
-
-        divisor = document.getElementById("divisor");
-        slider = document.getElementById("slider");
-        function moveDivisor() { divisor.style.width = slider.value+"%"; }
-        </script>
-                    
-                </div>
-                <div class="col-lg-3 col-lg-offset-4">
+                
+                <div class="col-lg-3 col-sm-6">
                     <div class="clearfix"></div>
                     <div id="money2">
-                        <h2 class="section-heading">Japanese Greetings</h2>
+                        <h2 class="section-heading">Japanese Money</h2>
                         <p class="lead">Japanese people tend to use nonverbal 
                         language. Many Japanese just make a bow with a smile 
                         indicating respect. Usually, young people have to 
@@ -108,9 +149,51 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
+			</div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<div class="content-section-a">
+
+        <div class="container" name="greeting">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Tipping</h2>
+                    <p class="lead">Tipping is not done or rare at best. It can even be insulting to tip, as though its an affront on the employee's salary. If you leave a few bills on the table after eating out, prepare to have the waiter run after you with your "forgotten" item. In America, tips are, in philosophy, meant to show appreciation for good service. Considering that many jobs such as waiters that are usually tipped get paid minimum wage or less, tipping has become a necessity.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                    <br /><br /><br /><img class="img-responsive" src="img/money-tray.jpg" width="385" height="257" alt="">
+                </div>
+            </div>
 
         </div>
         <!-- /.container -->
 
     </div>
     <!-- /.content-section-a -->
+	
+		<br />	<br />
+	<div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-sm-push-4  col-sm-6">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Japan is a collectivist culture, whereas the United States is more individualistic</h2>
+                     <p class="lead">Japanese culture is focused on groups and communities. Satisfaction and pride is meant to be found within the group you belong to. In the United States, people tend to find satisfaction in their own accomplishments, and focus on their own aspirations. An example of this is that in Japanese business culture, employees tend to work for one company for their entire lives. Company loyalty is valued, and promotions are often given on a seniority basis. In America, people focus on their careers independent from the companies they work for, and will often change companies a number of times throughout their professional lives. Promotions are supposed to be given on a basis of merit. In Japan, this can also influence a mindset of how people live in society. People tend to follow rules more seriously, from something as simple as trying not to litter - which makes big cities like Tokyo surprisingly clean.</p>
+					 </div>
+                <div class="col-lg-5 col-sm-pull-7  col-sm-6">
+                    <br /><br /><img class="img-responsive" src="img/ceremony.jpg" width="385" height="257" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
