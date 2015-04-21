@@ -52,7 +52,7 @@ body {
 .btn-light {
     border-radius: 0;
     color: #fff;
-    background-color: #0066ff;
+    background-color: #000;
 }
 
 .btn-light:hover,
@@ -488,6 +488,7 @@ margin-top: 2%;
 }
 	
 /* Culture Slider */
+/*
 div#comparison { 
   width: 60vw;
   height: 60vw;
@@ -566,7 +567,7 @@ input[type=range]:focus::-moz-range-thumb {
    }
 	
 /*slider*/
-
+/*
 div#comparison {
 width: 60vw; height: 60vw;
 max-width: 600px; max-height: 600px;
@@ -627,3 +628,4 @@ background: rgba(255,255,255,0.5);
 input[type=range]:focus::-moz-range-thumb {
 background: rgba(255,255,255,0.5);
 }
+*/
